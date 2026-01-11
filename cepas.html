@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cepas y Genética - FungusLlampa</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html">Nosotros</a></li>
+        <li><a href="cepas.html" class="active">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><button id="theme-toggle" class="theme-btn">🌙</button></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="cepas-bg" class="full-screen-section">
+        <div class="content-wrapper">
+          <header class="section-header">
+            <h2 class="category-title">Banco de Genéticas</h2>
+            <div class="description-top">
+              <p>
+                Selecciona tu genética. Disponible en Cultura Líquida, Grano,
+                Kit o Placa.
+              </p>
+            </div>
+          </header>
+
+          <div class="product-grid-4col">
+            <article
+              class="product-item"
+              onclick="openModal(this)"
+              data-type="clasica"
+              data-name="Albino A+"
+              data-img="img/albinoa+.webp"
+              data-desc="Variante leucística de gran belleza visual. Frutos pálidos y esporulación reducida."
+            >
+              <div class="img-container">
+                <img src="img/albinoa+.webp" alt="Albina" />
+              </div>
+              <div class="info-box">
+                <h3>Albino A+</h3>
+                <p class="price">Clásica</p>
+              </div>
+            </article>
+
+            <article
+              class="product-item"
+              onclick="openModal(this)"
+              data-type="clasica"
+              data-name="B+ (Be Positive)"
+              data-img="img/b+.webp"
+              data-desc="Un clásico indiscutible. La B+ es famosa por su versatilidad, resistencia y sus frutos de gran tamaño."
+            >
+              <div class="img-container">
+                <img src="img/b+.webp" alt="B+" />
+              </div>
+              <div class="info-box">
+                <h3>B+</h3>
+                <p class="price">Clásica</p>
+              </div>
+            </article>
+
+            <article
+              class="product-item"
+              onclick="openModal(this)"
+              data-type="clasica"
+              data-name="Hilly Billy"
+              data-img="img/Hillybiry.webp"
+              data-desc="Ganadora de copas recientes. Crecimiento voraz, colonización rápida y grandes rendimientos."
+            >
+              <div class="img-container">
+                <img src="img/Hillybiry.webp" alt="Hilly Billy" />
+              </div>
+              <div class="info-box">
+                <h3>Hilly Billy</h3>
+                <p class="price">Clásica</p>
+              </div>
+            </article>
+
+            <article
+              class="product-item"
+              onclick="openModal(this)"
+              data-type="clasica"
+              data-name="Shakti"
+              data-img="img/shakti.webp"
+              data-desc="Rareza albina de la costa Malabar. Frutos fantasmales, branquias onduladas y potencia superior."
+            >
+              <div class="img-container">
+                <img src="img/shakti.webp" alt="Shakti" />
+              </div>
+              <div class="info-box">
+                <h3>Shakti</h3>
+                <p class="price">Clásica</p>
+              </div>
+            </article>
+
+            <article
+              class="product-item"
+              onclick="openModal(this)"
+              data-type="clasica"
+              data-name="Treasure Coast"
+              data-img="img/treasurecoast.webp"
+              data-desc="Originaria de la costa de Florida. Conocida por producir flushes muy abundantes."
+            >
+              <div class="img-container">
+                <img src="img/treasurecoast.webp" alt="Treasure Coast" />
+              </div>
+              <div class="info-box">
+                <h3>Treasure Coast</h3>
+                <p class="price">Clásica</p>
+              </div>
+            </article>
+
+            <article
+              class="product-item"
+              onclick="openModal(this)"
+              data-type="clasica"
+              data-name="Z-Strain"
+              data-img="img/Zstrain.webp"
+              data-desc="Genética diseñada comercialmente para máxima velocidad y producción. Colonizadora rápida."
+            >
+              <div class="img-container">
+                <img src="img/Zstrain.webp" alt="Z-Strain" />
+              </div>
+              <div class="info-box">
+                <h3>Z-Strain</h3>
+                <p class="price">Clásica</p>
+              </div>
+            </article>
+
+            <article
+              class="product-item"
+              onclick="openModal(this)"
+              data-type="exotica"
+              data-name="Albino Makilla Gorilla"
+              data-img="img/albinomakillago.webp"
+              data-desc="Aislamiento albino de la potente Makilla Gorilla. Frutos densos, estipes gruesos y potencia elevada."
+            >
+              <div class="img-container">
+                <img
+                  src="img/albinomakillago.webp"
+                  alt="Albino Makilla Gorilla"
+                />
+              </div>
+              <div class="info-box">
+                <h3>Albino Makilla G.</h3>
+                <p class="price exotica">Exótica</p>
+              </div>
+            </article>
+
+            <article
+              class="product-item"
+              onclick="openModal(this)"
+              data-type="exotica"
+              data-name="APE (OC01)"
+              data-img="img/OG01Ape.webp"
+              data-desc="Aislamiento selecto de Albino Penis Envy (Clone 01). Conocida por su potencia extrema y morfología única."
+            >
+              <div class="img-container">
+                <img src="img/OG01Ape.webp" alt="APE OC01" />
+              </div>
+              <div class="info-box">
+                <h3>APE (OG01)</h3>
+                <p class="price exotica">Exótica</p>
+              </div>
+            </article>
+
+            <article
+              class="product-item"
+              onclick="openModal(this)"
+              data-type="exotica"
+              data-name="APE Revert"
+              data-img="img/Aperevert.webp"
+              data-desc="Albino Penis Envy Revert. Cepa estabilizada que ha vuelto a esporular manteniendo la potencia de la APE."
+            >
+              <div class="img-container">
+                <img src="img/Aperevert.webp" alt="APE Revert" />
+              </div>
+              <div class="info-box">
+                <h3>APE Revert</h3>
+                <p class="price exotica">Exótica</p>
+              </div>
+            </article>
+
+            <article
+              class="product-item"
+              onclick="openModal(this)"
+              data-type="exotica"
+              data-name="Ghost"
+              data-img="img/ghost.webp"
+              data-desc="Mutación estabilizada de True Albino Teacher. Frutos pequeños, de bordes ondulados y potencia excepcional."
+            >
+              <div class="img-container">
+                <img src="img/ghost.webp" alt="Ghost" />
+              </div>
+              <div class="info-box">
+                <h3>Ghost</h3>
+                <p class="price exotica">Exótica</p>
+              </div>
+            </article>
+
+            <article
+              class="product-item"
+              onclick="openModal(this)"
+              data-type="exotica"
+              data-name="Melmak PE Revert F2"
+              data-img="img/MPErevertf2.webp"
+              data-desc="Segunda generación filial del Melmak PE Revert. Estabilizando características de frutos masivos y retorcidos."
+            >
+              <div class="img-container">
+                <img src="img/MPErevertf2.webp" alt="Melmak PE Revert F2" />
+              </div>
+              <div class="info-box">
+                <h3>Melmak PE Rev F2</h3>
+                <p class="price exotica">Exótica</p>
+              </div>
+            </article>
+
+            <article
+              class="product-item"
+              onclick="openModal(this)"
+              data-type="exotica"
+              data-name="Melmak Revert"
+              data-img="img/melmakrevert.webp"
+              data-desc="Mutación estabilizada del Melmak que retorna a la morfología clásica, facilitando la recolección de esporas."
+            >
+              <div class="img-container">
+                <img src="img/melmakrevert.webp" alt="Melmak Revert" />
+              </div>
+              <div class="info-box">
+                <h3>Melmak Revert</h3>
+                <p class="price exotica">Exótica</p>
+              </div>
+            </article>
+
+            <article
+              class="product-item"
+              onclick="openModal(this)"
+              data-type="exotica"
+              data-name="Melmak Albino PE F1"
+              data-img="img/MelmakrevertalbinopenisenvyF1.webp"
+              data-desc="Cruce experimental F1. Combina la estructura del Melmak con la pigmentación albina del PE."
+            >
+              <div class="img-container">
+                <img
+                  src="img/MelmakrevertalbinopenisenvyF1.webp"
+                  alt="Melmak Revert Albino F1"
+                />
+              </div>
+              <div class="info-box">
+                <h3>Melmak Albino F1</h3>
+                <p class="price exotica">Exótica</p>
+              </div>
+            </article>
+
+            <article
+              class="product-item"
+              onclick="openModal(this)"
+              data-type="exotica"
+              data-name="Mystery Albino"
+              data-img="img/mysteryalbinorevert.webp"
+              data-desc="Un enigma genético. Frutos albinos con morfología cambiante y gran producción de principios activos."
+            >
+              <div class="img-container">
+                <img
+                  src="img/mysteryalbinorevert.webp"
+                  alt="Mystery Albino Revert"
+                />
+              </div>
+              <div class="info-box">
+                <h3>Mystery Albino</h3>
+                <p class="price exotica">Exótica</p>
+              </div>
+            </article>
+
+            <article
+              class="product-item"
+              onclick="openModal(this)"
+              data-type="exotica"
+              data-name="P. Natalensis"
+              data-img="img/natalensis.webp"
+              data-desc="Especie distinta a Cubensis originaria de Sudáfrica. Micelio ultra agresivo y resistente a contaminaciones."
+            >
+              <div class="img-container">
+                <img src="img/natalensis.webp" alt="Natalensis" />
+              </div>
+              <div class="info-box">
+                <h3>P. Natalensis</h3>
+                <p class="price exotica">Exótica</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-col">
+          <h3>FungusLlampa</h3>
+          <p>
+            Micología profesional en Lima. Llevando la ciencia y el respeto por
+            los hongos a tu hogar.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Navegación</h3>
+          <ul class="footer-links">
+            <li><a href="cepas.html">Cepas y Genéticas</a></li>
+            <li><a href="cepas.html">Kits de Cultivo</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <div class="legal-notice">
+            <strong>Aviso Legal Importante:</strong><br /><br />
+            Los productos ofrecidos se venden exclusivamente para fines de
+            observación microscópica, colección taxonómica y preservación
+            genética.
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2026 FungusLlampa. Todos los derechos reservados.
+      </div>
+    </footer>
+
+    <div id="productModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <div class="modal-body">
+          <div class="modal-img-wrapper"></div>
+          <div class="modal-details">
+            <h2 id="modal-title">Nombre del Producto</h2>
+            <p id="modal-price" class="modal-price">0.00</p>
+            <div class="modal-selectors">
+              <label id="selector-label">Presentación:</label>
+              <select id="variant-select"></select>
+            </div>
+            <div id="modal-desc" class="modal-description"></div>
+            <button class="add-cart-btn">Añadir al Carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart-icon" onclick="toggleCart()">
+      🛒 <span id="cart-count">0</span>
+    </div>
+
+    <div id="cartModal" class="cart-modal">
+      <div class="cart-content">
+        <span class="close-cart" onclick="toggleCart()">&times;</span>
+        <h2>Tu Pedido</h2>
+        <div id="cart-items" class="cart-items-container">
+          <p class="empty-msg">Tu carrito está vacío.</p>
+        </div>
+        <div class="cart-footer">
+          <div class="total-row">
+            <span>Total Aprox:</span>
+            <span id="cart-total">0.00</span>
+          </div>
+          <button class="checkout-btn" onclick="sendToWhatsapp()">
+            <span class="btn-icon">📱</span> Pedir por WhatsApp
+          </button>
+          <button class="clear-btn" onclick="clearCart()">
+            Vaciar Carrito
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

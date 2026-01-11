@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - FungusLlampa</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html">Nosotros</a></li>
+        <li><a href="cepas.html">Productos</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="contact-section">
+        <div class="content-wrapper">
+          <div class="section-header">
+            <h1 class="category-title">Síguenos</h1>
+            <p>Canales de atención directa.</p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="social-cards">
+              <a
+                href="https://wa.me/51966756553"
+                target="_blank"
+                class="social-card"
+              >
+                <div class="social-icon">📱</div>
+                <div class="social-info">
+                  <h3>WhatsApp</h3>
+                  <p>La forma más rápida. Atención directa y soporte.</p>
+                </div>
+              </a>
+
+              <a
+                href="https://www.instagram.com/fungusllampa/"
+                target="_blank"
+                class="social-card"
+              >
+                <div class="social-icon">📸</div>
+                <div class="social-info">
+                  <h3>Instagram</h3>
+                  <p>
+                    Mira nuestros cultivos diarios y novedades @fungusllampa
+                  </p>
+                </div>
+              </a>
+
+              <a
+                href="https://www.facebook.com/profile.php?id=61582193777751"
+                target="_blank"
+                class="social-card"
+              >
+                <div class="social-icon">👍</div>
+                <div class="social-info">
+                  <h3>Facebook</h3>
+                  <p>Únete a nuestra comunidad en FB.</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="contact-info-side">
+              <h2>¿Tienes dudas?</h2>
+              <p>
+                En <strong>FungusLlampa</strong> entendemos que la micología
+                puede ser compleja al inicio. Si no estás seguro de qué genética
+                elegir o qué kit se adapta mejor a tu espacio, escríbenos.
+              </p>
+              <br />
+              <p>
+                <strong>Horario de Atención:</strong><br />
+                Lunes a Sábado: 9:00 AM - 8:00 PM<br />
+                Domingos: Previa coordinación.
+              </p>
+              <br />
+              <p style="font-size: 0.9rem; color: #888">
+                <em
+                  >*Todos los envíos se realizan con absoluta discreción y
+                  garantías de esterilidad.</em
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-col">
+          <h3>FungusLlampa</h3>
+          <p>
+            Micología profesional en Lima. Llevando la ciencia y el respeto por
+            los hongos a tu hogar con la mejor genética y equipamiento.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Navegación</h3>
+          <ul class="footer-links">
+            <li><a href="cepas.html">Cepas y Genéticas</a></li>
+            <li><a href="cepas.html">Kits de Cultivo</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <div class="legal-notice">
+            <strong>Aviso Legal Importante:</strong><br /><br />
+            Los productos ofrecidos por FungusLlampa (esporas, cultivos
+            líquidos) están destinados exclusivamente para fines de observación
+            microscópica, colección taxonómica y preservación genética.<br /><br />
+            No proporcionamos asesoramiento sobre el cultivo para consumo
+            humano. Al adquirir nuestros productos, confirmas ser mayor de 18
+            años.
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2026 FungusLlampa. Todos los derechos reservados.
+      </div>
+    </footer>
+
+    <div class="cart-icon" onclick="toggleCart()">
+      🛒 <span id="cart-count">0</span>
+    </div>
+
+    <div id="cartModal" class="cart-modal">
+      <div class="cart-content">
+        <span class="close-cart" onclick="toggleCart()">&times;</span>
+        <h2>Tu Pedido</h2>
+        <div id="cart-items" class="cart-items-container">
+          <p class="empty-msg">Tu carrito está vacío.</p>
+        </div>
+        <div class="cart-footer">
+          <div class="total-row">
+            <span>Total:</span>
+            <span id="cart-total">S/.0.00</span>
+          </div>
+          <button class="checkout-btn" onclick="sendToWhatsapp()">
+            <span class="btn-icon">📱</span> Pedir por WhatsApp
+          </button>
+          <button class="clear-btn" onclick="clearCart()">
+            Vaciar Carrito
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
