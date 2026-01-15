@@ -1352,3 +1352,28 @@ body.dark-mode .variant-note p {
     position: absolute;
   }
 }
+/* ETIQUETAS DE STOCK */
+.stock-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: white;
+  z-index: 10;
+  text-transform: uppercase;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.stock-badge.in-stock {
+  background-color: #27ae60;
+}
+.stock-badge.pre-order {
+  background-color: #e74c3c;
+}
+
+/* Efecto Hover Modal */
+.theme-exotica .stock-badge.in-stock {
+  background-color: #9c27b0;
+}
