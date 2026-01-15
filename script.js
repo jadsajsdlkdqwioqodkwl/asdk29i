@@ -1,4 +1,4 @@
-const API_BASE = "http://asdassadsad.rf.gd/api.php"; // Tu dominio de backend
+const API_BASE = "http://asdassadsad.rf.gd/api/api.php"; // Tu dominio de backend
 const phoneNumber = "51966756553";
 
 let globalPrecios = {};
@@ -239,3 +239,4 @@ function initTheme() {
     );
   };
 }
+
